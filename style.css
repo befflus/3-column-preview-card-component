@@ -4,6 +4,7 @@
 /* Colors  */
 
 :root {
+  font-size: 15px;
   /* Primary */
   --brightOrange: hsl(31, 77%, 52%);
   --darkCyan: hsl(184, 100%, 22%);
@@ -18,9 +19,16 @@
 }
 
 body {
-  font-size: 15px;
+  background-color: var(--veryLightGray);
+}
+.container {
   display: flex;
   flex-direction: column;
+  line-height: 1.8em;
+  padding: 5rem 1rem;
+}
+.tile {
+  padding: 45px 50px;
 }
 
 p {
@@ -31,17 +39,57 @@ p {
 h2 {
   font-family: "Big Shoulders Display", cursive, sans-serif;
   color: var(--veryLightGray);
+  text-transform: uppercase;
+  font-size: 2.8em;
 }
 .sedans {
   background-color: var(--brightOrange);
+  border-radius: 10px 10px 0 0;
 }
 
+.sedans button:hover {
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+ }
 .suvs {
   background-color: var(--darkCyan);
 }
 
+.suvs button:hover {
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+ }
+
 .luxury {
   background-color: var(--veryDarkCyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.luxury button:hover {
+  background-color: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+ }
+button {
+  margin-top: 10px;
+  padding: .8rem 2.3rem;
+  border-radius: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--veryLightGray);
+  font-weight: 600;
+  border: solid 2px var(--veryLightGray);
+  
+}
+
+.sedans button {
+  color: var(--brightOrange);
+}
+
+.suvs button {
+  color: var(--darkCyan);
+}
+
+.luxury button {
+  color: var(--veryDarkCyan);
 }
 .attribution {
   font-size: 11px;
@@ -50,3 +98,4 @@ h2 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
